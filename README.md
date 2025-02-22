@@ -1,21 +1,21 @@
 # Git助手 (Git Helper)
 
-一个简单易用的Git图形界面工具，专为不熟悉Git命令行的用户设计。通过简单的点击操作，即可完成Git版本控制的基本功能。
+Git助手是一个简单易用的Git图形界面工具，专为不熟悉Git命令行的用户设计。通过简单的点击操作，即可完成Git版本控制的基本功能。
 
 ## 功能特点
 
-- 图形化界面，操作简单直观
-- 支持SSH和HTTPS两种远程仓库连接方式
-- 自动处理分支创建和切换
-- 智能错误提示和处理
-- 支持多次提交和远程仓库URL更改
-- 可指定任意分支名（不存在则自动创建）
+- **图形化界面**：操作简单直观，适合所有用户。
+- **支持多种连接方式**：支持SSH和HTTPS两种远程仓库连接方式。
+- **自动处理分支**：自动创建和切换分支，简化操作流程。
+- **智能错误提示**：提供详细的错误信息，帮助用户快速解决问题。
+- **多次提交**：支持多次提交和远程仓库URL更改。
+- **灵活的分支管理**：可指定任意分支名（如果不存在则自动创建）。
 
 ## 安装要求
 
-- Python 3.6 或更高版本
-- Git 客户端
-- 必需的Python包：
+- **Python 3.6 或更高版本**：确保你的系统中安装了Python。
+- **Git 客户端**：需要安装Git以支持版本控制。
+- **必需的Python包**：运行以下命令安装所需的Python库：
   ```bash
   pip install gitpython tkinter
   ```
@@ -23,26 +23,27 @@
 ## 使用前准备
 
 1. **安装Git**：
-   - Windows: 从 [Git官网](https://git-scm.com/download/win) 下载并安装
-   - Linux: `sudo apt-get install git` (Ubuntu/Debian)
-   - macOS: `brew install git` (使用Homebrew)
+   - **Windows**: 从 [Git官网](https://git-scm.com/download/win) 下载并安装。
+   - **Linux**: 使用命令 `sudo apt-get install git`（适用于Ubuntu/Debian）。
+   - **macOS**: 使用命令 `brew install git`（通过Homebrew）。
 
 2. **配置SSH密钥**（如果使用SSH方式）：
+   - 生成SSH密钥对：
    ```bash
    ssh-keygen -t rsa -b 4096 -C "你的邮箱"
    ```
-   将生成的公钥（.pub文件）添加到GitHub账户设置中。
+   - 将生成的公钥（.pub文件）添加到GitHub账户设置中。
 
 ## 使用说明
 
 1. **启动程序**：
    ```bash
-   python git_helper.py
+   python GitHelper.py
    ```
 
 2. **基本操作流程**：
 
-   a. **选择代码文件夹**
+   a. **选择代码文件夹**：
    - 点击"选择代码文件夹"按钮
    - 选择要进行版本控制的文件夹
 
@@ -84,10 +85,10 @@
 
 ## 注意事项
 
-- 首次使用建议选择空文件夹开始
-- 确保提交前已保存所有文件更改
-- 推荐使用SSH方式连接GitHub，更安全便捷
-- 定期提交和推送以保持代码同步
+- **首次使用建议选择空文件夹开始**
+- **确保提交前已保存所有文件更改**
+- **推荐使用SSH方式连接GitHub**
+- **定期提交和推送以保持代码同步**
 
 ## 技术支持
 
