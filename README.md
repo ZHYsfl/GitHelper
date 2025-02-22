@@ -105,10 +105,6 @@ Git助手是一个简单易用的Git图形界面工具，专为不熟悉Git命�
 2. 提交Pull Request
 3. 分享使用经验
 
-## 许可证
-
-MIT License
-
 ## 使用SSH方式的前提
 
 使用SSH形式的远程仓库URL（如 `git@github.com:ZHYsfl/xxxxxxxx.git`）前提是：
